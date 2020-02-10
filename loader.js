@@ -12,7 +12,7 @@ async function load() {
             loader_bar.style.width = i + "%";
             await sleep(5);
         }
-        if(current == max) break;
+        if (current == max) break;
         current += random;
         if (current > max) current = max;
     }

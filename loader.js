@@ -17,7 +17,7 @@ async function load() {
         if (current > max) current = max;
     }
     loader_panel.style.display = "none";
-    page_data.style.display = "block";
+    page_data.style.display = "flex";
 }
 load();
 

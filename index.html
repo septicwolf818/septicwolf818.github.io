@@ -5,26 +5,177 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>SepticWolf818</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <script src="js/menu.js"></script>
+    <title>Rafał Widło - SepticWolf818</title>
 </head>
 
 <body>
-    <div id="loader">
-        <div id="name">SepticWolf818</div>
-        <div id="loader_container">
-            <div id="loader_bar"></div>
-        </div>
-    </div>
     <div id="data">
-        <div id="about">
-            <h1>Hi! I'm Rafał.<br>This website isn't finished yet.<br>You can check out my GitHub repositories by
-                clicking the button below.
-            </h1>
-            <div id="go_to_github" onclick="window.location='https://github.com/septicwolf818'">Open GitHub</div>
+
+        <div id="menu">
+
+            <div id="tag" class="text-accent">Rafał Widło - SepticWolf818</div>
+            <div id="menu-button" onclick="toggleMenu()">&#x2630;</div>
+            <div id="menu-items-wrapper">
+                <div class="menu-item active" id="menu-item-home" onclick="openSection(this)">Home</div>
+                <div class="menu-item" id="menu-item-portfolio" onclick="openSection(this)">Portfolio</div>
+                <div class="menu-item" id="menu-item-about" onclick="openSection(this)">About me</div>
+                <div class="menu-item" id="menu-item-contact" onclick="openSection(this)">Contact</div>
+            </div>
         </div>
-    </div>
-    <script src="loader.js"></script>
+        <div class="section" id="home">
+            <h1>Hi! I am <span class="text-accent">Rafał Widło</span></h1>
+            <h2 id="about-me">I am a Polish based programmer focused on crafting software that helps people around me in
+                their everyday life. <br> I am constantly developing and learning new technologies.</h2>
+        </div>
+        <div class="section" id="portfolio" style="display: none;">
+            <div class="project" id="jei">
+                <h1>Just Edit It</h1>
+                <h3>One page HTML/CSS/JS editor</h3>
+                <img src="img/jei.png" alt="Just Edit It image">
+                <div class="button" onclick="window.open('projects/just-edit-it', '_blank');"">Try it</div>
+                <div class=" button" onclick="window.open('https://github.com/septicwolf818/just-edit-it', '_blank');">
+                    View on GitHub</div>
+            </div>
+            <div class=" project" id="maze-game">
+                <h1>Maze game</h1>
+                <h3>A game made for an educational fair for my secondary school</h3>
+                <img src="img/mg.png" alt="Maze game image">
+                <div class="button" onclick="window.open('projects/maze-game', '_blank');"">Try it</div>
+                <div class=" button" onclick="window.open('https://github.com/septicwolf818/maze-game', '_blank');">
+                    View on GitHub</div>
+            </div>
+            <div class=" project" id="math-board">
+                <h1>Math board</h1>
+                <h3>A drawing program made for my teacher for use on a multimedia whiteboard</h3>
+                <img src="img/mb.png" alt="Math board image">
+                <div class="button" onclick="window.open('projects/math-board', '_blank');"">Try it</div>
+                <div class=" button" onclick="window.open('https://github.com/septicwolf818/math-board', '_blank');">
+                    View on GitHub</div>
+            </div>
+            <div class=" project" id="slide-game">
+                <h1>Slide game</h1>
+                <h3>A game inspired by the Candy Crush mobile game. It's not that simple as it look.</h3>
+                <img src="img/sg.png" alt="Slide game image">
+                <div class="button" onclick="window.open('projects/slide-game', '_blank');"">Try it</div>
+                <div class=" button" onclick="window.open('https://github.com/septicwolf818/slide-game', '_blank');">
+                    View on GitHub</div>
+            </div>
+            <div class=" project" id="color-scheme">
+                <h1>Color scheme</h1>
+                <h3>A small simple tool to generate color schemes for websites. The tool also offers
+                    generating a simple website using the generated colors. Application created for use
+                    with Linux distributions.</h3>
+                <img src="img/cs.png" alt="Color scheme image">
+                <div class="button" onclick="window.open('https://github.com/septicwolf818/color-scheme', '_blank');">
+                    View on GitHub</div>
+            </div>
+            <div class=" project" id="bubble-sort-visualization">
+                <h1>Bubble sort visualization</h1>
+                <h3>Bubble sort visualization made using p5.js for one of CS lessons in my secondary
+                    school</h3>
+                <img src="img/bsv.png" alt="Bubble sort visualization image">
+                <div class="button" onclick="window.open('projects/bubble-sort-visualization', '_blank');"">Try it</div>
+                <div class=" button"
+                    onclick="window.open('https://github.com/septicwolf818/bubble-sort-visualization', '_blank');">View
+                    on GitHub</div>
+            </div>
+            <div class=" project" id="simple-calculator">
+                <h1>Simple calculator</h1>
+                <h3>One of my first JavaScript projects made in school</h3>
+                <img src="img/sc.png" alt="Simple calculator image">
+                <div class="button" onclick="window.open('projects/simple-calculator', '_blank');"">Try it</div>
+                <div class=" button"
+                    onclick="window.open('https://github.com/septicwolf818/simple-calculator', '_blank');">View on
+                    GitHub</div>
+            </div>
+            <div class=" project" id="snake">
+                <h1>Snake</h1>
+                <h3>Snake game made using p5.js</h3>
+                <img src="img/s.png" alt="Snake image">
+                <div class="button" onclick="window.open('projects/snake/snake', '_blank');"">Try it</div>
+                <div class=" button" onclick="window.open('https://github.com/septicwolf818/js-snake', '_blank');">View
+                    on GitHub</div>
+            </div>
+            <div class=" project" id="os">
+                <h1>Operating systems</h1>
+                <h3>My first website created in 2016</h3>
+                <img src="img/so.png" alt="Operating systems website image">
+                <div class="button" onclick="window.open('projects/systemy-operacyjne', '_blank');">Try it</div>
+                <div class=" button"
+                    onclick="window.open('https://github.com/septicwolf818/systemy-operacyjne', '_blank');"">View on GitHub</div>
+</div>
+            <div class=" project" id="python-socket-chat">
+                    <h1>Python socket chat</h1>
+                    <h3>One of my first Python 3 projects</h3>
+                    <img src="img/psc.png" alt="Python socket chat image">
+                    <div class="button"
+                        onclick="window.open('https://github.com/septicwolf818/python-socket-chat', '_blank');">View on
+                        GitHub</div>
+                </div>
+            </div>
+            <div class=" section" id="about" style="display: none;">
+                <h1>About me</h1>
+
+                <p>I am Rafał Widło. I'm <span id="age"></span> years old. </p>
+                <p>I have finished IT technical school.</p>
+                <p>I have started programming in 2013 - since then I am
+                    constantly developing. </p>
+                <p>I learn most things on my own - from blogs and books
+                    available on the Internet.</p>
+
+                <h1>Technologies</h1>
+                <p>Technologies that I use so far:</p>
+                <div id="technologies">
+                    <div class="technology" ><i class="fab fa-html5" style="color: #ffd04f;"></i>&nbsp;HTML</div>
+                    <div class="technology"><i class="fab fa-css3-alt" style="color: #4c8df5;"></i>&nbsp;CSS</div>
+                    <div class="technology"><i class="fab fa-js" style="color: #edf725;"></i>&nbsp;JavaScript</div>
+                    <div class="technology"><i class="fab fa-python" style="color: #30a9d9;"></i>&nbsp;Python</div>
+                    <div class="technology"><i class="fab fa-java" style="color: #f0990e;"></i>&nbsp;Java</div>
+                    <div class="technology"><i class="fab fa-php" style="color: #1298b3;"></i>&nbsp;PHP
+                    </div>
+                    <div class="technology"><i class="fab fa-github" style="color: #000000;"></i>&nbsp;GitHub</div>
+                    <div class="technology"><i class="fab fa-linux" style="color: #171717;"></i>&nbsp;Linux</div>
+
+                </div>
+
+            </div>
+            <div class="section" id="contact" style="display: none;">
+                <h1>Contact me</h1>
+                <div id="contact-options">
+                    <div class="contact-option"><i class="fas fa-at"></i>&nbsp;<span
+                            onclick="window.open('mailto:rafal.widlo@gmail.com');">rafal.widlo@gmail.com</span></div>
+                    <div class="contact-option"><i class="fab fa-github"></i>&nbsp;<span
+                            onclick="window.open('https://github.com/septicwolf818', '_blank');">GitHub</span></div>
+                    <div class="contact-option"><i class="fab fa-facebook-f"></i>&nbsp;<span
+                            onclick="window.open('https://www.facebook.com/rafal.widlo/', '_blank');">Facebook</span>
+                    </div>
+                    <div class="contact-option"><i class="fab fa-instagram"></i>&nbsp;<span
+                            onclick="window.open('https://www.instagram.com/sw818.py/', '_blank');">Instagram</span>
+                    </div>
+                    <div class="contact-option"><i class="fab fa-twitter"></i>&nbsp;<span
+                        onclick="window.open('https://twitter.com/SepticWolf818', '_blank');">Twitter</span>
+                </div>
+
+                </div>
+            </div>
+
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                var age = undefined;
+                var now = new Date();
+                age = parseInt(now.getFullYear()) - 2000;
+                if (now.getMonth() < 5 || (now.getMonth() == 5 && now
+                        .getDate() < 8)) age--;
+                document.querySelector("#age").innerHTML = age;
+
+            });
+        </script>
 </body>
 
 </html>

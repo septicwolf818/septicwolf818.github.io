@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+<head>
+<link rel="Shortcut icon" href="sources/icon.ico">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Description" content="Strona poświęcona systemom operacyjnym. Zastanawiasz się, jaki system operacyjny wybrać? Jakie funkcje posiada każdy z nich? W takim przypadku bardzo dobrze trafiłeś(aś)! Zapraszam do lektury :) " />
+<meta name="Keywords" content="systemy, operacyjne, strona, poświęcona, systemom, operacyjnym" />
+
+<link rel="Stylesheet" type="text/css" href="sources/style.css" />
+
+<title>Strona główna</title>
+
+</head>
+<body>
+<div id="top">
+	<div id="BODY">
+		<div id="LOGO"><!--LOGO--><a name="start"></a><img src="sources/logo.png" alt="SYSTEMY OPERACYJNE LOGO" /><!--/LOGO--></div>
+		<div id="SZUKAJ">
+		<!--SZUKAJ-->
+
+Wyszukaj w Internecie:
+<br />
+<form action="http://www.google.com/search" method="get" />
+<input type="hidden" name="ie" value="iso-8859-2" />
+<input name="q" value="Czego szukasz?" onfocus="if(this.value=='' || this.value == 'Czego szukasz?') this.value=''" onblur="if(this.value == '') {this.value=this.defaultValue}" onkeyup="keyUp();" type="text">
+<input type="submit" value="Szukaj"/>
+</form>
+
+		<!--/SZUKAJ-->
+		</div>
+		<div id="MENU">
+			<!--MENU-->
+			<div class="MENU">
+				<div class="NAGLOWEK" id="MENU_NAGLOWEK"><!--NAGLOWEK MENU--><img src="sources/nawigacja.png" alt="Nawigacja" /><!--/NAGLOWEK MENU--></div>
+				<div class="ZAWARTOSC">
+				<!--ZAWARTOSC MENU-->
+<p>Systemy:</p>
+					<ul>
+					<li><a href="system/windows.html">Windows</a></li>
+					<li><a href="system/linux.html">Linux</a></li>
+					<li><a href="system/os_x.html">OS X</a></li>
+					</ul>
+<br />
+<hr />
+<a href="gry.html">Gry online</a>
+				<!--/ZAWARTOSC MENU-->
+				</div>
+			</div>
+			<!--/MENU-->
+		</div>
+		<div id="TRESC">
+		<div class="ZAWARTOSC">
+		<!--TRESC-->
+<h1>Witaj!</h1>
+<h4><p><i>Zastanawiasz się, jaki system operacyjny wybrać? Jakie funkcje posiada każdy z nich?</i></p></h4>
+<p>W takim przypadku to bardzo dobre miejsce, aby znaleźć odpowiedź na te pytania! Zapraszam do lektury :) </p>
+<p>Na samym początku warto wiedzieć co to jest system operacyjny, aby móc odnaleźć ten odpowiedni.</p>
+<hr />
+
+<h4><p><i>Co to jest system operacyjny?</i></p></h4>
+
+<p>System operacyjny (ang. operating system, skrót OS) – oprogramowanie zarządzające systemem komputerowym, tworzące środowisko do uruchamiania i kontroli zadań użytkownika.</p>
+
+<p><u>W celu uruchamiania i kontroli zadań użytkownika system operacyjny zajmuje się:</u></p>
+
+<ul>
+<li>planowaniem oraz przydziałem czasu procesora poszczególnym zadaniom,</li>
+<li>kontrolą i przydziałem pamięci operacyjnej dla uruchomionych zadań,</li>
+<li>dostarcza mechanizmy do synchronizacji zadań i komunikacji pomiędzy zadaniami,</li>
+<li>obsługuje sprzęt oraz zapewnia równolegle wykonywanym zadaniom jednolity, wolny od interferencji dostęp do sprzętu.</li>
+</ul>
+
+<p><u>Dodatkowe przykładowe zadania, którymi może, ale nie musi, zajmować się system operacyjny to:</u></p>
+<ul>
+<li>ustalanie połączeń sieciowych,</li>
+<li>zarządzanie plikami.</li>
+</ul>
+
+<p>Wiele systemów operacyjnych posiada środowiska graficzne ułatwiające komunikacje maszyny z użytkownikiem. Poniżej znajduje się przykład:</p>
+
+<center><img src="sources/graphics_example.png" alt="Przykład interfejsu graficznego" width="100%" /></center>
+<center><i>Przykład graficznego interfejsu systemu operacyjnego wraz z uruchomionym oprogramowaniem. Środowisko KDE 3.2.1 na systemie operacyjnym SuSE Linux 9.1</i></center>
+<hr />
+<h4><p><i>Budowa systemu operacyjnego</i></p></h4>
+<p>Teraz coś dla bardziej ciekawskich - jak wygląda system operacyjny "od środka"</p>
+<p><u>Przyjęto podział na trzy główne elementy budowy systemu operacyjnego:</u></p>
+
+<ul>
+<li>jądro systemu wykonujące i kontrolujące ww. zadania.</li>
+<li>powłoka – specjalny program komunikujący użytkownika z systemem operacyjnym,</li>
+<li>system plików – sposób zapisu struktury danych na nośniku.</li>
+</ul>
+
+<p><u>Jądro składa się z następujących elementów funkcjonalnych:</u></p>
+
+<ul>
+<li>planisty czasu procesora, ustalającego które zadanie i jak długo będzie wykonywane,</li>
+<li>przełącznika zadań, odpowiedzialnego za przełączanie pomiędzy uruchomionymi zadaniami,</li>
+</ul>
+<ul>
+<p><u>Dodatkowo:</u></p>
+<ul>
+<li>modułu zapewniającego synchronizacje i komunikację pomiędzy zadaniami,</li>
+<li>modułu obsługi przerwań i zarządzania urządzeniami,</li>
+<li>modułu obsługi pamięci, zapewniającego przydział i ochronę pamięci.</li>
+<li>innych zależnie od funkcji i przeznaczenia systemu.</li>
+</ul>
+</ul>
+<center><img src="sources/warstwowy_model_systemu_operacyjnego.jpg" alt="Warstwowy model systemu operacyjnego" width="100%" /></center>
+<center><i>Warstwowy model systemu operacyjnego</i></center>
+<p>Dla zwykłego użytkownika nie jest to istotne, gdyż nie musi się on jakoś specjalnie zagłębiać w dany OS, tylko znać podstawy jego użytkowania.</p>
+<hr />
+<p>Przejdźmy teraz do najważniejszego pytania:</p>
+<h4><p><i>Jaki system operacyjny wybrać?</i></p></h4>	
+<p>System operacyjny jest niezbędny dla naszego komputera, gdyż jak wiemy - to właśnie on zapewnia nam (czyli użytkownikom) dostęp do tego co oferuje urządzenie. </p>
+<p>Poniżej znajduje się lista najpopularniejszych systemów operacyjnych:</p>
+					<ul>
+					<li><a href="system/windows.html">Windows</a></li>
+					<li><a href="system/linux.html">Linux</a></li>
+					<li><a href="system/os_x.html">OS X</a></li>
+					</ul>
+<hr />
+<p>Potrzebujesz więcej informacji na opisane wyżej tematy? Użyj wyszukiwarki w nagłówku strony :)</p> 
+
+<br />
+<hr />
+
+
+
+
+<h3><center><a href="#start">Do góry ^^^</a></center></h3>
+
+		<!--/TRESC-->
+		</div>
+		</div>
+		<div id="INFO">
+			<!--INFO-->
+			<div class="MENU">
+				<div class="NAGLOWEK"><!--NAGLOWEK INFO--><img src="sources/informacje.png" alt="Informacje" /><!--/NAGLOWEK INFO--></div>
+				<div class="ZAWARTOSC">
+				<!--ZAWARTOSC INFO-->
+Dzisiaj jest:
+<br />
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- Begin
+var months=new Array(13);
+months[1]="Styczeń";
+months[2]="Luty";
+months[3]="Marzec";
+months[4]="Kwiecień";
+months[5]="Maj";
+months[6]="Czerwiec";
+months[7]="Lipiec";
+months[8]="Sierpień";
+months[9]="Wrzesień";
+months[10]="Październik";
+months[11]="Listopad";
+months[12]="Grudzień";
+var time=new Date();
+var lmonth=months[time.getMonth() + 1];
+var date=time.getDate();
+var year=time.getYear();
+if ((navigator.appName == "Microsoft Internet Explorer") && (year < 2000))
+year="19" + year;
+if (navigator.appName == "Netscape")
+year=1900 + year;
+document.write(date + " ");
+document.write(lmonth + ", " + year + "r.");
+// End -->
+</SCRIPT>
+<noscript>
+<p>Twoja przeglądarka nie obsługuje skryptów tego typu!</p>
+</noscript>
+<br /> <br />
+Godzina:
+<br />
+            <span id="zegar"></span>
+            <script type="text/javascript">
+            o=document.getElementById('zegar')
+            setInterval('o.innerHTML=/[\\d:]{8}/.exec(Date())',1e3)
+            </script>
+<noscript>
+<p>Twoja przeglądarka nie obsługuje skryptów tego typu!</p>
+</noscript>
+<p>Tłumacz:</p>
+
+<div id='MicrosoftTranslatorWidget' class='Dark' style='color:white;background-color:#000000'>
+</div>
+<script type='text/javascript'>setTimeout(function(){{var s=document.createElement('script');s.type='text/javascript';s.charset='UTF-8';s.src=((location && location.href && location.href.indexOf('https') == 0)?'https://ssl.microsofttranslator.com':'http://www.microsofttranslator.com')+'/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**&ctf=True&ui=true&settings=Manual&from=';var p=document.getElementsByTagName('head')[0]||document.documentElement;p.insertBefore(s,p.firstChild); }},0);
+</script>
+<noscript>
+<p>Twoja przeglądarka nie obsługuje skryptów tego typu!</p>
+</noscript>
+
+				<!--/ZAWARTOSC INFO-->
+				</div>
+			</div>
+			<!--/INFO-->
+		</div>
+		<div id="STOPKA"><!--STOPKA-->&copy; Systemy Operacyjne - 
+<script language=JavaScript> 
+var time=new Date();
+var year=time.getYear();
+if ((navigator.appName == "Microsoft Internet Explorer") && (year < 2000))
+year="19" + year;
+if (navigator.appName == "Netscape")
+year=1900 + year;
+document.write(year);
+</script>
+| Autor: Rafał Widło
+<br />
+<h3><center><marquee bgcolor="red" scrollamount=3 scrolldelay=30>Strona wykonana z pomocą <a target="about:blank" href="http://www.kurshtml.edu.pl">Kursu&nbsp;HTML</a> - Zapraszam do lektury!</marquee></center></h3>
+<!--/STOPKA--></div>
+	</div>
+</div>
+</body>
+</html>                                        

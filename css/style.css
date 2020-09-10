@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #515151;
+    color: white;
+}
+
+/* Global */
+:root {
+    --accent-color: yellow;
+}
+
+div {
+    float: left;
+}
+
+.text-accent {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+#data {
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
+
+
+#data {
+    width: 100%;
+}
+
+.section {
+    width: 100%;
+    margin: 0 50%;
+    transform: translateX(-50%);
+}
+
+
+/* Menu */
+#tag {
+    height: 40px;
+    line-height: 40px;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: calc(100% - 120px);
+    background-color: rgba(0, 0, 0, .3);
+}
+
+#menu-button {
+    height: 40px;
+    width: 40px;
+    padding: 20px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+#menu {
+    float: left;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+#menu-items-wrapper {
+    width: 100%;
+    display: none;
+}
+
+.menu-item {
+    text-transform: uppercase;
+    height: 40px;
+    width: calc(100% - 40px);
+    line-height: 40px;
+    text-align: center;
+    padding: 20px;
+    float: left;
+    margin: 0 auto;
+    user-select: none;
+    cursor: pointer;
+    transition-duration: .3s;
+    transition-property: color, background-color;
+}
+
+
+#menu-button:hover,
+.menu-item:hover,
+.active {
+    background-color: rgba(0, 0, 0, .2);
+    color: var(--accent-color);
+}
+
+.active {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+
+/* Home */
+
+
+#home {
+    width: 100%;
+}
+
+#about-me {
+    width: 90%;
+    text-align: justify;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: normal;
+}
+
+
+
+/* Portfolio */
+
+
+.project {
+    width: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, .2);
+    margin: 20px auto;
+    padding: 20px;
+    float: unset;
+    box-sizing: border-box;
+}
+
+.project p {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.project img {
+    width: 100%;
+    display: block;
+    margin: auto;
+    float: unset;
+}
+
+#portfolio .button {
+    float: unset;
+    box-sizing: border-box;
+    width: 50%;
+    margin: 20px auto;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 10px;
+}
+
+
+/* About */
+
+
+#about p {
+    display: block;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#about #technologies {
+    display: block;
+    float: unset;
+    width: 50%;
+    margin: auto;
+}
+
+#about .technology {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 2rem;
+    background-color: rgba(255,255,255,.1);
+}
+
+
+/* Contact */
+
+#contact #contact-options {
+    display: block;
+    float: unset;
+    width: 90%;
+    margin: auto;
+}
+
+#contact .contact-option {
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#contact .contact-option:hover {
+    transition-duration: .5s;
+}
+
+.contact-option:nth-child(1):hover {
+    color: rgb(126, 126, 231);
+    background-color: white;
+}
+
+.contact-option:nth-child(2):hover {
+    color: #24292e;
+    background-color: #f6f8fa;
+}
+
+.contact-option:nth-child(3):hover {
+    color: #3b5998;
+    background-color: white;
+}
+
+.contact-option:nth-child(4):hover {
+    color: white;
+    background-color: #c13584;
+}
+.contact-option:nth-child(5):hover {
+    color: white;
+    background-color: #1da1f2;
+}
+
+#contact .contact-option i {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+/* Non mobile */
+@media only screen and (min-width: 600px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    #tag {
+        width: calc(100% - 40px);
+        line-height: 20px;
+        height: 20px;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    #about-me {
+        width: 33.3%;
+    }
+
+    #menu-items-wrapper {
+        margin: 60px auto 0 auto;
+        width: max-content;
+        float: unset;
+        height: 60px;
+        display: block;
+    }
+
+    .menu-item {
+        display: block;
+        align-self: center;
+        height: 20px;
+        line-height: 20px;
+        width: auto;
+        margin: auto;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .project {
+        width: 80%;
+        border-radius: 10px;
+    }
+
+    .project img {
+        width: 80%;
+        display: block;
+        margin: auto;
+        float: unset;
+        border-radius: 10px;
+    }
+
+    #about p {
+        display: block;
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    #about .technology {
+        display: block;
+        width: 50%;
+        margin: auto;
+        border: 5px solid #515151;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    #contact .contact-option {
+        display: block;
+        width: 50%;
+        box-sizing: border-box;
+        padding: 20px;
+        float: unset;
+        margin: auto;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    #contact .contact-option i {
+        display: inline;
+        text-align: center;
+    }
+}

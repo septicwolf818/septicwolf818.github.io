@@ -1,0 +1,336 @@
+/*AUTOR: RAFAŁ WIDŁO*/
+﻿/*STRONA*/
+:link {
+	cursor: url(link.cur), auto;
+}
+:visited {
+	cursor: url(link.cur), auto;
+}
+body {
+	cursor: url(pointer.cur), auto;
+	font-size: 12px;
+	font-family: Calibri, Arial, Helvetica, sans-serif;
+	background-color: #00E080;
+	background-image: url(background.jpg);
+	background-attachment:fixed;
+	background-repeat:repeat;
+	background-position:center
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+a img {
+	border: 0;
+}
+/*/STRONA*/
+
+/*RAMKA*/
+#top {
+	background-color: #000000;
+	margin: 0 auto;
+	width: 900px;
+}
+/*/RAMKA*/
+
+/*WNETRZE*/
+#BODY {
+	background-color: #80E020;
+	text-align: left;
+	margin: 0 10px;
+	width: 880px;
+}
+/*/WNETRZE*/
+
+/*LOGO*/
+#LOGO {
+	font-size: 40px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	background-color: #008000;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	text-align: center;
+	font-weight: bold;
+}
+/*/LOGO*/
+
+/*SZUKAJ*/
+#SZUKAJ {
+	color: black;
+	text-shadow:0 1px 0 #FFF,
+	0 2px 0 #AAA,
+	0 2px 4px #00ff00;
+	font-size: 14px;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	color: #FFFFFF;
+	background-color: #004000;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	text-align: center;
+}
+
+/*/SZUKAJ*/
+
+/*MENU*/
+#MENU {
+	width: 150px;
+	overflow: hidden;
+	float: left;
+}
+/*NAGLOWEK MENU*/
+#MENU .NAGLOWEK {
+	margin-top: 0px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	font-size: 14px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	background-color: #004000;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	border-top: 5px inset #00FF00;
+	border-right: 5px inset #00FF00;
+	border-bottom: 5px outset #00FF00;
+	border-left: 5px outset #00FF00;
+	text-align: center;
+	font-weight: bold;
+}
+/*/NAGLOWEK MENU*/
+/*ZAWARTOSC MENU*/
+
+#MENU .ZAWARTOSC {
+	margin-top: 0px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	background-color: #FFFFFF;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	border-top: 5px inset #00FF00;
+	border-right: 5px inset #00FF00;
+	border-bottom: 5px outset #00FF00;
+	border-left: 5px outset #00FF00;
+}
+#MENU .ZAWARTOSC a:link {
+	color: #000000;
+	text-decoration: underline;
+	font-weight: normal;
+	font-style: normal;
+}
+#MENU .ZAWARTOSC a:visited {
+	color: #000000;
+	text-decoration: underline;
+	font-weight: normal;
+	font-style: normal;
+}
+#MENU .ZAWARTOSC a:hover {
+	color: #00FF00;
+	text-decoration: underline;
+	font-weight: normal;
+	font-style: normal;
+}
+#MENU .ZAWARTOSC ul {
+	display: block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#MENU .ZAWARTOSC ul li {
+	display: block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+/*/ZAWARTOSC MENU*/
+/*/MENU*/
+
+/*INFO*/
+#INFO {
+	width: 150px;
+	overflow: hidden;
+	float: right;
+}
+/*NAGLOWEK INFO*/
+#INFO .NAGLOWEK {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	font-size: 14px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	background-color: #004000;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	border-top: 5px inset #00FF00;
+	border-right: 5px inset #00FF00;
+	border-bottom: 5px outset #00FF00;
+	border-left: 5px outset #00FF00;
+	text-align: center;
+	font-weight: bold;
+}
+/*/NAGLOWEK INFO*/
+/*ZAWARTOSC INFO*/
+#INFO .ZAWARTOSC {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	background-color: #FFFFFF;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	border-top: 5px inset #00FF00;
+	border-right: 5px inset #00FF00;
+	border-bottom: 5px outset #00FF00;
+	border-left: 5px outset #00FF00;
+}
+#INFO .ZAWARTOSC a:link {
+	color: #000000;
+	text-decoration: underline;
+	font-weight: bold;
+	font-style: normal;
+}
+#INFO .ZAWARTOSC a:visited {
+	color: #000000;
+	text-decoration: underline;
+	font-weight: bold;
+	font-style: normal;
+}
+#INFO .ZAWARTOSC a:hover {
+	color: #00FF00;
+	text-decoration: underline;
+	font-weight: normal;
+	font-style: normal;
+}
+#INFO .ZAWARTOSC ul {
+	display: block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#INFO .ZAWARTOSC ul li {
+	display: block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+/*/ZAWARTOSC INFO*/
+/*/INFO*/
+
+/*TRESC*/
+li:hover {
+	color: #505050;
+}
+p {
+	text-align: justify;
+}
+p:hover {
+	color: #505050;
+
+}
+h1:hover {
+	text-shadow:0 4px 2px #FFF,
+              0 6px 5px #AAA,
+              0 6px 4px #AAA;
+}
+
+h1 {
+	color: black;
+	text-shadow:0 2px 0 #FFF,
+              0 3px 0 #AAA,
+              0 3px 6px #AAA;
+}
+
+	
+#TRESC {
+	width: 580px;
+	overflow: hidden;
+	float: left;
+}
+#TRESC .ZAWARTOSC {
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	background-color: #FFFFFF;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 30px;
+	padding-left: 10px;
+}
+#TRESC .ZAWARTOSC a:link {
+	color: #000000;
+	text-decoration: underline;
+	font-weight: bold;
+	font-style: normal;
+}
+#TRESC .ZAWARTOSC a:visited {
+	color: #000000;
+	text-decoration: underline;
+	font-weight: bold;
+	font-style: normal;
+}
+#TRESC .ZAWARTOSC a:hover {
+	color: #00FF00;
+	text-decoration: underline;
+	font-weight: bold;
+	font-style: normal;
+}
+/*/TRESC*/
+
+/*STOPKA*/
+#STOPKA {
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	background-color: #008000;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 2px;
+	padding-right: 10px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	border-top: 5px outset #00FF00;
+	border-right: 5px inset #00FF00;
+	border-bottom: 5px inset #00FF00;
+	border-left: 5px outset #00FF00;
+	text-align: center;
+	clear: both;
+}
+#STOPKA a:link, #STOPKA a:visited {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+#STOPKA a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+/*/STOPKA*/

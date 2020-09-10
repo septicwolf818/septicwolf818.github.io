@@ -1,0 +1,34 @@
+
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Edytor HTML CSS JS</title>
+      <meta charset="utf-8">
+      <script src="main.js"></script>
+      <link rel="stylesheet" href="default.css">
+   </head>
+   <body onload="init()">
+      <div id="editor-body">
+         <textarea spellcheck="false" contenteditable="true" id="editor-codearea" class="editor-element" onkeyup="liveRegenerate()" placeholder="Twój kod tutaj..."></textarea>
+         <iframe id="editor-preview" class="editor-element"></iframe>
+         <div id="editor-controls" class="editor-element">
+            <span>Rozmiar czcionki: </span>
+            <button onclick="fontDown()" class="editor-button" >-</button>
+            <input id="editor-font-size" class="editor-text-input"  value="20" onblur="setFont()">
+            <button onclick="fontUp()" class="editor-button" >+</button>
+            <span>Podgląd na żywo: </span>
+            <div id="live-checkbox" onclick="toggleLivePreview()">&#10006;</div>
+            <span>Przykładowa strona: </span>
+            <button onclick="loadBlankPage()" class="editor-button">Otwórz</button>
+             <span>Zapisz kod: </span>
+            <button onclick="savePage()" class="editor-button">Zapisz</button>
+         </div>
+      </div>
+      <script>
+         // Enable the tab character onkeypress (onkeydown) inside textarea...
+         // ... for a textarea that has an `id="editor-codearea"`
+         enableTab('editor-codearea');
+      </script>
+   </body>
+</html>

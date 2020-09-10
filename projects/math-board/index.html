@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math board</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      box-sizing: border-box;
+      cursor: crosshair;
+      touch-action: none;
+    }
+
+    #controls {
+      position: absolute;
+      bottom: 0;
+      height: 70px;
+      border: 1px solid #515151;
+      width: calc(100% - 2px);
+      background-color: #F1F1F1;
+      user-select: none;
+    }
+
+    button {
+      border: none;
+      border-radius: 5px;
+      font-size: 1.5em;
+      background-color: khaki;
+      margin: 10px;
+      box-sizing: border-box;
+      outline: none;
+    }
+
+    .clear {
+      color: white;
+      background-color: red;
+    }
+
+    .active {
+      background-color: rgb(223, 255, 174);
+      border: 1px solid black;
+    }
+
+    #constrols,
+    #tools,
+    #state {
+      float: left;
+    }
+
+
+    .color {
+      width: 50px;
+      height: 50px;
+      margin: 11px;
+      line-height: 110px;
+      display: block;
+      float: left;
+
+    }
+
+    .colorpack {
+      display: unset;
+      display: inline;
+
+    }
+
+    .coloractive {
+      border: 3px dashed black;
+    }
+
+    #tools button {
+      width: 50px;
+      height: 50px;
+      line-height: 40px;
+    }
+
+    #tools {
+      width: 50%;
+    }
+
+    #author {
+      margin: 10px;
+      text-align: right;
+      font-family: monospace;
+      font-size: 10px;
+    }
+  </style>
+  <script src="p5.js"></script>
+  <script src="addons/p5.sound.js"></script>
+  <script src="sketch.js"></script>
+  <div id="controls">
+
+    <div id="tools">
+      <button onclick="cnvs1.clearCanvas()" class="clear">&times;</button>
+      <button onclick="changeMode('draw', 0)" class="mode active">&#9998;</button>
+      <button onclick="changeMode('line', 1)" class="mode">\</button>
+      <button onclick="changeMode('square', 2)" class="mode">&#9633;</button>
+      <button onclick="changeMode('circle', 3)" class="mode">&#9675;</button>
+    </div>
+    <div id="colors">
+      <div class="colorpack">
+        <button class="color coloractive" style="background-color: black;" data-color="black"
+          onclick="changeColor(this)">&nbsp;</button>
+        <button class="color " style="background-color: red;" data-color="red"
+          onclick="changeColor(this)">&nbsp;</button>
+      </div>
+      <div class="colorpack">
+        <button class="color" style="background-color: green;" data-color="green"
+          onclick="changeColor(this)">&nbsp;</button>
+        <button class="color" style="background-color: blue;" data-color="blue"
+          onclick="changeColor(this)">&nbsp;</button>
+      </div>
+      <div class="colorpack">
+        <button class="color" style="background-color: rgb(226, 226, 226);" data-color="white"
+          onclick="changeColor(this)">&nbsp;</button>
+      </div>
+    </div>
+    <div id="author">Author: Rafał Widło</div>
+  </div>
+</head>
+
+<body>
+</body>
+
+</html>

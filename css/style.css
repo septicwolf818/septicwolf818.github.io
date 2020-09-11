@@ -123,6 +123,21 @@ h6 {
     font-weight: normal;
 }
 
+#me {
+    float: unset;
+    width: calc(50% + 20px);
+    box-sizing: border-box;
+    padding-top: 50%; /* 1:1 Aspect Ratio */
+    position: relative;
+    border-radius: 50%;
+    border: 10px solid var(--accent-color);
+    background-image: url(../img/me.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    margin-top: 40px;
+}
+
 
 
 /* Portfolio */
@@ -252,6 +267,8 @@ h6 {
 
 
 
+
+
 /* Non mobile */
 @media only screen and (min-width: 600px) {
     h1 {
@@ -336,5 +353,20 @@ h6 {
     #contact .contact-option i {
         display: inline;
         text-align: center;
+    }
+    #me {
+        float: unset;
+        width: 400px;
+        height: 400px;
+        padding: 0;
+        box-sizing: border-box;
+        position: relative;
+        border-radius: 50%;
+        border: 10px solid var(--accent-color);
+        background-image: url(../img/me.jpg);
+        background-size: cover;
+        background-position: center;
+        margin: auto;
+        margin-top: 40px;
     }
 }
